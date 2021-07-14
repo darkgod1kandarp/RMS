@@ -1,0 +1,19 @@
+
+<html>
+{% load static %}
+
+<head>
+<title>GYAPAK</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'background.css' %}"/> 
+</head>
+<body>
+<div class="container">
+{% for form in forms %}
+
+<a href = "chap4.pdf" download><button class="btn"><i class="fa fa-folder"></i>{{ form.file_name }}</button></a>
+{% endfor %}
+</div>
+</body>
+</html>
+

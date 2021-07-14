@@ -1,0 +1,22 @@
+<html>
+{% load static%}
+<head>
+<title>Gyapak</title>
+<link rel="stylesheet" href="{% static 'background1.css' %}"/> 
+</head>
+<body>
+<div class ="container" >
+
+<form method = "POST">
+    <h1>GYAPAK</h1>
+    {{ error }}
+    {{form.as_p}}
+    
+    {% csrf_token %}
+
+    <input type = "submit" value = "Submit">
+</form>
+</div>
+</body>
+
+</html>

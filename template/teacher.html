@@ -1,0 +1,24 @@
+<html>
+{% load static %}
+<head>
+<title>Gyapak</title>
+<link rel="stylesheet" href="{% static 'background3.css' %}"/> 
+</head>
+<body>
+<div class ="container">
+<form method = "POST" enctype = "multipart/form-data">
+    {{ prof.as_p }}
+    {% csrf_token %}
+
+    <input type = "submit" value = "Submit">
+    
+    
+</form>
+
+</div>
+
+
+
+</body>
+
+</html>

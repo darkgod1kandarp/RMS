@@ -1,0 +1,23 @@
+<html>
+{% load static%}
+<head>
+<title>Gyapak</title>
+<link rel="stylesheet" href="{% static 'background2.css' %}"/> 
+</head>
+<body>
+<div class = "container">
+<form method = "POST" >
+    
+    
+    {% csrf_token %}
+
+    <input type = "submit" value = "Uploading file" name = "upload">
+    <h3>If Professor wants to see downlad file than he can go to download option else he should go on upload option for uploading file  </h3>
+    <input type="submit" value ="Download file" name ="see">
+    
+</form>
+
+</div>
+
+</body>
+</html>

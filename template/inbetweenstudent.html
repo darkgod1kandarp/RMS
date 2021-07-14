@@ -1,0 +1,21 @@
+<html>
+{% load static %}
+<head>
+<title>GYAPAK</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'background.css' %}"/> 
+</head>
+<body>
+
+<div class="container">
+<form method = "POST">
+{% csrf_token %}
+{% for form in forms %}
+
+<button class="btn"  name = "{{form}}"><i class="fa fa-folder"></i>{{ form }}</button>
+{% endfor %}
+<input type="submit" value = "SEE">
+</form>
+</div>
+</body>
+</html>
